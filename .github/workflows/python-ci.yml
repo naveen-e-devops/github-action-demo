@@ -21,3 +21,10 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v4
+
+  build:
+    name: run build job
+    runs-on: ubuntu-latest
+    steps:
+      - name: print build message
+        run: echo "Build job is running"
